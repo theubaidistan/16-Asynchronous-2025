@@ -12,7 +12,7 @@
 
 ## 🖼️ Preview
 
-![Web App Screenshot](./preview.png)
+![Web App Screenshot](/img/img-1.jpg)
 _Minimal, responsive UI showcasing fetched countries and flags_
 
 ---
