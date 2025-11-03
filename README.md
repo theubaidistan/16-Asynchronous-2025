@@ -10,6 +10,35 @@
 
 ---
 
+## 🖼️ Preview
+
+![Web App Screenshot](./preview.png)
+_Minimal, responsive UI showcasing fetched countries and flags_
+
+---
+
+## 🧑‍💻 Code Example
+
+![Code Sample](./code-sample.png)
+
+```js
+// Fetch countries and display flags
+async function loadCountries() {
+  try {
+    showLoading();
+    const response = await fetch('https://restcountries.com/v3.1/all');
+    const data = await response.json();
+    displayCountries(data);
+  } catch (error) {
+    showError(error);
+  } finally {
+    hideLoading();
+  }
+}
+```
+
+---
+
 ## 🧠 Overview
 
 **Asynchronous JavaScript Explorer** is a learning project built to visualize and understand **async workflows** — from API fetching to promise handling and error states.  
@@ -77,49 +106,47 @@ Then open:
 ┣ 📜 README.md
 ┗ 📜 .gitignore
 
-🧠 Learning Goals
+---
+
+## 🧠 Learning Goals
 
 Through this project, you’ll learn to:
 
-Understand Promises and async/await
+- Understand Promises and async/await
+- Handle API requests & responses
+- Manage loading/error states
+- Integrate fetch() with DOM manipulation
+- Debug and test asynchronous code
 
-Handle API requests & responses
+---
 
-Manage loading/error states
+## 🚀 Future Enhancements
 
-Integrate fetch() with DOM manipulation
+- 🔍 Add search/filter for countries
+- 💾 Implement caching to reduce API calls
+- 🔄 Add retry and timeout logic
+- 🎨 Improve UI with animations
+- 🌐 Add region-based sorting or dark mode
 
-Debug and test asynchronous code
+---
 
-🚀 Future Enhancements
-
-🔍 Add search/filter for countries
-
-💾 Implement caching to reduce API calls
-
-🔄 Add retry and timeout logic
-
-🎨 Improve UI with animations
-
-🌐 Add region-based sorting or dark mode
-
-📜 License
+## 📜 License
 
 This project is licensed under the MIT License — free to use, modify, and share.
 
-🤝 Contributing
+---
+
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 Feel free to open a PR or an issue on GitHub.
 
-💬 Author
-
-👨‍💻 Debug Dominator
-📍 Built with ❤️ and JavaScript
-🔗 Live Demo
-
-“Mastering async JavaScript is the key to building fast, responsive, and modern web applications.”
-
 ---
 
-Would you like me to include **preview screenshots** (like a website thumbnail and code example image section) in this README too? It’ll make it look more professional on GitHub.
+## 💬 Author
+
+👨‍💻 Debug Dominator  
+📍 Built with ❤️ and JavaScript  
+🔗 [Live Demo](https://16-asynchronous-2025.vercel.app/)
+
+> “Mastering async JavaScript is the key to building fast, responsive, and modern web applications.”
